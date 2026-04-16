@@ -1,8 +1,5 @@
 # LF-PSO-YOLOv8 for Agricultural Object Detection
 
-
-# LF-PSO-YOLOv8 for Agricultural Object Detection
-
 This repository contains the implementation of my seminar research: **Integrating Levy Flight Particle Swarm Optimization (LF-PSO) with YOLOv8 for Enhanced Agricultural Object Detection**.
 
 The project applies metaheuristic optimization to automatically tune YOLOv8 hyperparameters for improved wheat head detection in real-world field conditions.
@@ -45,7 +42,7 @@ pip install -r requirements.txt
 # Run the notebook
 jupyter notebook LF_PSO_YOLOv8_Wheat_Detection.ipynb
 
-#Repository Structure
+##Repository Structure
 
 LF-PSO-YOLOv8-Agricultural-Detection/
 │
@@ -58,18 +55,15 @@ LF-PSO-YOLOv8-Agricultural-Detection/
     ├── convergence_curve.png
     └── sample_detections.png
 
-📝 Dataset
+##📝 Dataset
 The Global Wheat Head Detection (GWHD) dataset is used for this project.
 
 Source: Kaggle Global Wheat Detection
-
 Images: 3,000+ high-resolution RGB images
-
 Annotations: ~120,000 wheat head bounding boxes
-
 Geographic Coverage: France, Japan, Canada, Australia, UK
 
-Setup Instructions
+#Setup Instructions
 Download the dataset from Kaggle
 
 Organize files in the following structure:
@@ -86,15 +80,12 @@ SeminarYOLO/
     └── labels/
 
 
-🔬 Methodology
+##🔬 Methodology
 Optimization Framework
 The project combines:
-
-YOLOv8 – Anchor-free object detector with C2f backbone and decoupled head
-
-Particle Swarm Optimization (PSO) – Swarm intelligence for hyperparameter search
-
-Levy Flight (LF) – Heavy-tailed random walks to escape local optima
+-YOLOv8 – Anchor-free object detector with C2f backbone and decoupled head
+-Particle Swarm Optimization (PSO) – Swarm intelligence for hyperparameter search
+-Levy Flight (LF) – Heavy-tailed random walks to escape local optima
 
 Optimized Hyperparameters
 Parameter	Lower Bound	Upper Bound	Description
@@ -106,20 +97,17 @@ iou	0.45	0.70	IoU threshold
 hsv_h	0.00	0.05	Hue augmentation
 hsv_s	0.50	0.90	Saturation augmentation
 
-📈 Results Visualization
+##📈 Results Visualization
 Convergence Comparison
 The LF-PSO curve shows smoother, monotonic reduction of fitness compared to standard PSO, confirming improved stability.
 
-Sample convergence plot available in the results/ folder.
+-Sample convergence plot available in the results/ folder.
+-Sample Detections
+-LF-PSO-YOLOv8 produces more accurate bounding boxes, especially in:
+-Dense canopy areas
+-Shadowed regions
 
-Sample Detections
-LF-PSO-YOLOv8 produces more accurate bounding boxes, especially in:
-
-Dense canopy areas
-
-Shadowed regions
-
-Overlapping wheat heads
+#Overlapping wheat heads
 hsv_v	0.40	0.90	Value augmentation
 mosaic	0.0	1.0	Mosaic augmentation probability
 LF-PSO Parameters
@@ -131,56 +119,22 @@ c₁, c₂	1.5	Cognitive and social factors
 β (Levy)	1.5	Stability index
 Step size	0.02	Perturbation magnitude
 
-📚 Related Publications
-Chaotic Levy-Flight-Driven Siberian Tiger Optimization for Enhanced Data Clustering (Published)
+#📚 Related Publications
+Integrating Levy Flight Particle Swarm Optimization with YOLOv8 for Enhanced Agricultural Object Detection (Seminar paper, not published yet)
 
-Integrating Levy Flight Particle Swarm Optimization with YOLOv8 for Enhanced Agricultural Object Detection (Seminar paper, attached)
-
-👨‍💻 Author
+##👨‍💻 Author
 Md Al Amin Hossain
 PhD Candidate, Information Technology Engineering
 Selçuk University, Konya, Turkiye
 📧 alaminh1411@gmail.com
 
-📄 License
+##📄 License
 This project is for academic research purposes. Please contact the author for permission to use or reproduce.
 
-🙏 Acknowledgments
-Supervisors: Prof. Dr. Tahir Sag, Selçuk University
+#🙏 Acknowledgments
+-Supervisors: Dr. Tahir Sag, Dept. of Computer Engineering, Selçuk University, Konya, Turkiye
+-Dataset: Global Wheat Head Detection (GWHD) consortium
+-Ultralytics team for YOLOv8 implementation
 
-Dataset: Global Wheat Head Detection (GWHD) consortium
-
-Ultralytics team for YOLOv8 implementation
-
-📧 Contact
-For questions or collaboration inquiries, please email me at alaminh1411@gmail.com.
-
-
----
-
-## How to Use This README
-
-| Step | Action |
-|------|--------|
-| **1** | Go to your GitHub repository |
-| **2** | Click on `README.md` (if exists) or create a new file |
-| **3** | Click the **pencil icon (Edit)** |
-| **4** | **Delete** any existing content |
-| **5** | **Copy and paste** the entire README above |
-| **6** | **Replace** `YOUR_USERNAME` in the git clone URL with your actual GitHub username |
-| **7** | **Scroll down** and click **"Commit changes"** |
-
----
-
-## What to Change in the README (Personalization)
-
-| Placeholder | Replace With |
-|-------------|--------------|
-| `YOUR_USERNAME` | Your actual GitHub username |
-| `alaminh1411@gmail.com` | Your email (if different) |
-
----
-
-## One More Thing
-
-Your Colab notebook link (`https://colab.research.google.com/drive/1l-Jc6bDS6Njxw_r2PWQwIsa1TSTVIFyG`) will automatically show the **Open in Colab** badge. The badge uses the link structure:
+##📧 Contact
+For questions or collaboration inquiries, please email me at alaminh1411@gmail.com
