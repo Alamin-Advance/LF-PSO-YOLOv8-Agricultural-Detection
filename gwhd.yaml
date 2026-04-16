@@ -1,0 +1,4 @@
+path: /content/SeminarYOLO/gwhd
+train: images/train
+val: images/val
+names: [wheat_head]
