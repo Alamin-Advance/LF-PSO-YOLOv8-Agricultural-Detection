@@ -42,7 +42,7 @@ pip install -r requirements.txt
 # Run the notebook
 jupyter notebook LF_PSO_YOLOv8_Wheat_Detection.ipynb
 
-##Repository Structure
+## Repository Structure
 
 LF-PSO-YOLOv8-Agricultural-Detection/
 │
@@ -55,7 +55,7 @@ LF-PSO-YOLOv8-Agricultural-Detection/
     ├── convergence_curve.png
     └── sample_detections.png
 
-##📝 Dataset
+## 📝 Dataset
 The Global Wheat Head Detection (GWHD) dataset is used for this project.
 
 Source: Kaggle Global Wheat Detection
